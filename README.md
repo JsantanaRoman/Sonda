@@ -1,16 +1,11 @@
 # sonda
 
-A new Flutter project.
+Sonda was created as an experiment to bring people closer to the island and its culture. Our idea behind this app is to use these sounds as a way to relax, focus, or simply transport oneself to the tropical paradise that is Puerto Rico.
+
+The concept of using white noise and ambient sounds to promote relaxation and well-being is not new, but we take this idea one step further by incorporating the unique sounds from our island into the mix. By doing so, Sonda aims to not only provide a soothing auditory experience, but also to connect people to the island and its culture in a meaningful way.
+
+Whether you are from Puerto Rico or simply looking to escape to a tropical paradise for a little while, Sonda offers a unique and immersive way to do so.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Coming Soon...
