@@ -1,0 +1,15 @@
+
+App Thinning Size Report for All Variants of Runner
+
+Variant: sonda-063BB204-78FC-47AD-A96F-CCE6A446CDEA.ipa
+Supported variant descriptors: [device: iPhone11,8, os-version: 16.0], [device: iPhone11,8, os-version: 15.0], [device: iPhone12,1, os-version: 16.0], and [device: iPhone12,1, os-version: 15.0]
+App + On Demand Resources size: 11 MB compressed, 21.9 MB uncompressed
+App size: 11 MB compressed, 21.9 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
+
+
+Variant: sonda-E819E105-F3E7-4EA4-A77A-1AE61E378283.ipa
+Supported variant descriptors: [device: iPhone12,1, os-version: 13.0], [device: iPhone11,8, os-version: 13.0], [device: iPhone12,1, os-version: 14.0], and [device: iPhone11,8, os-version: 14.0]
+App + On Demand Resources size: 11 MB compressed, 21.9 MB uncompressed
+App size: 11 MB compressed, 21.9 MB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed

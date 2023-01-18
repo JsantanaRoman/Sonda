@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "25370112937",
+    "project_id": "sonda-b3fbb",
+    "storage_bucket": "sonda-b3fbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25370112937:android:242b328760bc055ed70ab8",
+        "android_client_info": {
+          "package_name": "com.example.sonda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25370112937-vitq1ne3jvnj853i4o4q5shj0a4lfd1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXZUJxMelO1WqHx6u2h869fa20WeCicPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25370112937-vitq1ne3jvnj853i4o4q5shj0a4lfd1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
