@@ -38,16 +38,18 @@ class PlaylistModal extends StatelessWidget {
             Expanded(
               child: GridView.count(
                 crossAxisCount: 2,
-                mainAxisSpacing: 10,
-                crossAxisSpacing: 20,
+                mainAxisSpacing: 13,
+                crossAxisSpacing: 10,
                 children: List.generate(
                   10,
                   (index) {
                     return Center(
                       child: Container(
+                        height: 255,
+                        width: 163,
                         decoration: BoxDecoration(
                           color: playlistBoxColor,
-                          borderRadius: BorderRadius.circular(126),
+                          borderRadius: BorderRadius.circular(170),
                         ),
                       ),
                     );
