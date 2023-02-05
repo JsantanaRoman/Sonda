@@ -116,13 +116,15 @@ class SettingsModal extends StatelessWidget {
                     ],
                   ),
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.monetization_on_outlined,
                   text: "Restore Purchases",
+                  onTap: () => {},
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.app_shortcut_outlined,
                   text: "See features",
+                  onTap: () => {},
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 40.0),
@@ -147,29 +149,35 @@ class SettingsModal extends StatelessWidget {
                     ],
                   ),
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.monetization_on_outlined,
                   text: "Contact",
+                  onTap: () => {},
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.app_shortcut_outlined,
                   text: "Send Feedback",
+                  onTap: () => {},
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.monetization_on_outlined,
                   text: "Privacy Policy",
+                  onTap: () => {},
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.app_shortcut_outlined,
                   text: "Terms and Conditions",
+                  onTap: () => {},
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.monetization_on_outlined,
                   text: "About Sonda",
+                  onTap: () => {},
                 ),
-                const ListItem(
+                ListItem(
                   icon: Icons.app_shortcut_outlined,
                   text: "Do you love us",
+                  onTap: () => {},
                 ),
               ],
             ),

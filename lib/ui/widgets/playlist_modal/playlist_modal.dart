@@ -15,7 +15,7 @@ class PlaylistModal extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+              padding: const EdgeInsets.only(left: 24, right: 24, top: 32),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -36,24 +36,34 @@ class PlaylistModal extends StatelessWidget {
               ),
             ),
             Expanded(
-              child: GridView.count(
-                crossAxisCount: 2,
-                mainAxisSpacing: 13,
-                crossAxisSpacing: 10,
-                children: List.generate(
-                  10,
-                  (index) {
-                    return Center(
-                      child: Container(
-                        height: 255,
-                        width: 163,
-                        decoration: BoxDecoration(
-                          color: playlistBoxColor,
-                          borderRadius: BorderRadius.circular(170),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: GridView.count(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 16,
+                  crossAxisSpacing: 16,
+                  childAspectRatio: .6,
+                  children: List.generate(
+                    10,
+                    (index) {
+                      return Container(
+                        decoration: const BoxDecoration(
+                          color: primaryColor,
+                          borderRadius: BorderRadius.all(Radius.circular(170)),
                         ),
-                      ),
-                    );
-                  },
+                        child: Center(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 150.0),
+                            child: Text(
+                              "Playa en verano",
+                              style: playlistText,
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ),
             ),

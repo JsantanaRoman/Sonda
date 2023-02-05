@@ -18,9 +18,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: SvgPicture.asset('assets/images/logo.svg'),
+        leading: Padding(
+          padding: const EdgeInsets.only(
+            left: 8.0,
+          ),
+          child: IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset('assets/images/logo.svg'),
+          ),
         ),
         actions: [
           IconButton(
@@ -42,35 +47,41 @@ class HomeScreen extends StatelessWidget {
               );
             },
             icon: SvgPicture.asset('assets/images/settings.svg'),
+          ),
+          const SizedBox(
+            width: 16,
           )
         ],
         backgroundColor: globalBackgroundColor,
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: Scrollbar(
-              child: AnimationLimiter(
-                child: ListView.builder(
-                  itemCount: soundList.length,
-                  itemBuilder: (BuildContext cxt, int index) {
-                    return AnimationConfiguration.staggeredList(
-                      position: index,
-                      duration: Duration(milliseconds: index * 150),
-                      child: ScaleAnimation(
-                        child: FadeInUp(
-                          child: SoundItem(
-                            index: index,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          children: [
+            Expanded(
+              child: Scrollbar(
+                child: AnimationLimiter(
+                  child: ListView.builder(
+                    itemCount: soundList.length,
+                    itemBuilder: (BuildContext cxt, int index) {
+                      return AnimationConfiguration.staggeredList(
+                        position: index,
+                        duration: Duration(milliseconds: index * 150),
+                        child: ScaleAnimation(
+                          child: FadeInUp(
+                            child: SoundItem(
+                              index: index,
+                            ),
                           ),
                         ),
-                      ),
-                    );
-                  },
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
       floatingActionButton: const PlayButton(),
     );

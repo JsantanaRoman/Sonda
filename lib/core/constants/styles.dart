@@ -58,3 +58,9 @@ TextStyle bodyTextStyle = const TextStyle(
   fontSize: 16,
   letterSpacing: -2,
 );
+
+TextStyle playlistText = const TextStyle(
+  fontSize: 34,
+  fontWeight: FontWeight.w500,
+  letterSpacing: -2,
+);

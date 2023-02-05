@@ -24,7 +24,7 @@ class _PlayButtonState extends State<PlayButton> {
           _textToggle = !_textToggle;
         });
       },
-      backgroundColor: secondaryColor,
+      backgroundColor: colorDarkGrey,
       child: _iconToggle
           ? SvgPicture.asset('assets/images/sonda_pause_icon.svg')
           : const Icon(
