@@ -65,7 +65,7 @@ class _SoundItemState extends ConsumerState<SoundItem> {
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: Text(
                   soundList[widget.index]['name'].toString(),
-                  style: modalHeadingTextStyleOne,
+                  style: headingTextStyle,
                 ),
               ),
               Row(

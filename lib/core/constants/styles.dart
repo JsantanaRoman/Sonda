@@ -5,8 +5,11 @@ const primaryColor = Color(0xFFEC6539);
 const secondaryColor = Color(0x332D60F2);
 const tertiaryColor = Colors.white;
 const colorWhite = Color(0xFFFFFFFF);
-const colorBlack = Color(0x0FF00000);
+const colorBlack = Color.fromARGB(255, 0, 0, 0);
 const colorGrey = Color(0xFFA7A7A7);
+const colorLightGrey = Color(0xFFD6D6D6);
+const colorDarkGrey = Color(0xFF262626);
+const iconGrey = Color(0xFF4D4E50);
 
 // Button Colors
 const buttonColorPrimary = Color(0xFF1C1C1C);
@@ -26,42 +29,32 @@ const globalBackgroundColor = Colors.black;
 const playlistBoxColor = Color(0xFFD9D9D9);
 
 // Text Styles
-const modalHeadingTextStyleOne = TextStyle(
-  color: colorWhite,
+TextStyle headingTextStyle = const TextStyle(
   fontSize: 40,
   fontWeight: FontWeight.w300,
   letterSpacing: -2,
 );
 
-TextStyle modalheadingTextStyleTwo =
-    modalHeadingTextStyleOne.copyWith(fontSize: 24);
-
-TextStyle modalheadingTextStyleThree =
-    modalHeadingTextStyleOne.copyWith(fontSize: 20);
-
-const primaryButtonTextStyle = TextStyle(
-  color: Colors.black,
-  fontSize: 22,
-  fontWeight: FontWeight.w600,
+TextStyle headingTextStyleTwo = const TextStyle(
+  fontSize: 24,
+  fontWeight: FontWeight.w300,
+  letterSpacing: -2,
 );
 
-const subscriptionValueTextStyle = TextStyle(
-  color: primaryColor,
+TextStyle boxHeadingTextStyle = const TextStyle(
   fontSize: 32,
   fontWeight: FontWeight.w300,
+  letterSpacing: -2,
+  color: primaryColor,
 );
 
-TextStyle inActiveSubscriptionValueTextStyle =
-    subscriptionValueTextStyle.copyWith(color: colorWhite);
+TextStyle subHeadingTextStyle = const TextStyle(
+  fontSize: 40,
+  fontWeight: FontWeight.w300,
+  letterSpacing: -2,
+);
 
-const subscriptionLengthTextStyle = TextStyle(
-  color: colorWhite,
+TextStyle bodyTextStyle = const TextStyle(
   fontSize: 16,
-  fontWeight: FontWeight.w300,
-);
-
-const subscriptionBoxDetailsTextStyle = TextStyle(
-  color: colorGrey,
-  fontSize: 12,
-  fontWeight: FontWeight.w300,
+  letterSpacing: -2,
 );

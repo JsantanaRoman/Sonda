@@ -1,5 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
@@ -24,6 +25,7 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {
+              HapticFeedback.lightImpact();
               showMaterialModalBottomSheet(
                 context: context,
                 builder: (context) => const PlaylistModal(),
@@ -33,6 +35,7 @@ class HomeScreen extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
+              HapticFeedback.lightImpact();
               showMaterialModalBottomSheet(
                 context: context,
                 builder: (context) => const SettingsModal(),

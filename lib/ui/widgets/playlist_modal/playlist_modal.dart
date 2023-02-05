@@ -20,9 +20,9 @@ class PlaylistModal extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
+                  Text(
                     "Playlist",
-                    style: modalHeadingTextStyleOne,
+                    style: headingTextStyle,
                     textAlign: TextAlign.start,
                   ),
                   IconButton(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
-import 'package:sonda/core/constants/styles.dart';
+import 'package:sonda/core/constants/theme.dart';
 import 'package:sonda/ui/screens/home_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -28,10 +28,7 @@ class Sonda extends StatelessWidget {
     return ProviderScope(
       child: MaterialApp(
         title: 'Sonda',
-        theme: ThemeData(
-          scaffoldBackgroundColor: globalBackgroundColor,
-          fontFamily: 'AtHaussStd',
-        ),
+        theme: sondaTheme(context),
         initialRoute: '/homeScreen',
         routes: {
           '/homeScreen': (context) => const HomeScreen(),
